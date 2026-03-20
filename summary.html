@@ -95,18 +95,26 @@
 
 <body class="font-body selection:bg-primary/30 selection:text-primary overflow-x-hidden">
     <!-- TopAppBar Execution -->
-    <nav
-        class="fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-8 py-4 md:py-6 bg-[#121317]/80 backdrop-blur-xl shadow-[0_48px_48px_rgba(0,218,243,0.04)]">
-        <a href="index.html" class="text-lg sm:text-xl md:text-2xl font-black tracking-tighter text-[#e3e2e8] font-headline max-w-[60%] sm:max-w-none truncate hover:opacity-80 transition-opacity">MakerToo/Io-Natural</a>
-        <button onclick="toggleMobileMenu()" class="md:hidden text-on-surface ml-auto mr-4 cursor-pointer hover:bg-surface-bright/20 rounded-lg p-2 transition-colors">
+    
+    <nav class="fixed top-0 w-full z-50 bg-[#121317]/80 backdrop-blur-xl border-b border-white/5 shadow-2xl shadow-primary/5">
+        <div class="max-w-7xl mx-auto px-4 md:px-8 py-4 md:py-6 flex justify-between items-center">
+            <a href="index.html" class="text-lg sm:text-xl md:text-2xl font-black tracking-tighter text-[#e3e2e8] font-headline max-w-[60%] sm:max-w-none truncate hover:opacity-80 transition-opacity hover:opacity-80 transition-opacity">MakerToo/Io-Natural</a>
+            
+            <button onclick="toggleMobileMenu()" class="md:hidden text-on-surface hover:bg-white/5 rounded-lg p-2 transition-colors">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
-            <div class="hidden md:flex items-center gap-10">
-            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="index.html">Pregled stanja</a>
-            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="sixth.html">Infrastruktura</a>
-            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="seventh.html">Avtomatizacija</a>
-            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="seo.html">SEO</a>
-            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="forth.html">Vrednost</a>
+            
+            <div class="hidden md:flex items-center gap-8 lg:gap-10">
+                <a class="font-headline text-sm tracking-wide uppercase font-bold transition-all duration-300 hover:text-primary text-[#c4c6cc]" href="index.html">Pregled stanja</a>
+                <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-primary transition-all duration-300" href="sixth.html">Infrastruktura</a>
+                <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-primary transition-all duration-300" href="seventh.html">Avtomatizacija</a>
+                <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-primary transition-all duration-300" href="seo.html">SEO</a>
+                <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-primary transition-all duration-300" href="forth.html">Vrednost</a>
+            </div>
+            
+            <div class="hidden lg:block">
+                <span class="text-[10px] font-headline font-bold uppercase tracking-[0.2em] text-primary/40 border border-primary/20 px-3 py-1.5 rounded-full">System Verified 2026</span>
+            </div>
         </div>
     </nav>
     <!-- SideNavBar Execution -->
