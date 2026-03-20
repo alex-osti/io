@@ -93,13 +93,13 @@
     <!-- TopNavBar -->
     <nav
         class="fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-8 py-4 md:py-6 bg-[#121317]/80 backdrop-blur-xl shadow-[0_48px_48px_rgba(0,218,243,0.04)]">
-        <div class="text-base sm:text-xl md:text-2xl font-black tracking-tighter text-[#e3e2e8] max-w-[55%] sm:max-w-none truncate">MakerToo/Io-Natural</div>
+        <a href="index.html" class="text-base sm:text-xl md:text-2xl font-black tracking-tighter text-[#e3e2e8] max-w-[55%] sm:max-w-none truncate hover:opacity-80 transition-opacity">MakerToo/Io-Natural</a>
         <button onclick="toggleMobileMenu()" class="md:hidden text-on-surface ml-auto mr-4 cursor-pointer hover:bg-surface-bright/20 rounded-lg p-2 transition-colors">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
             <div class="hidden md:flex space-x-8">
             <a class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
-                href="index.html">Pregled</a>
+                href="summary.html">Pregled</a>
             <a class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#00daf3] border-b-2 border-[#00daf3] pb-1"
                 href="second.html">Tehnologija</a>
             <a class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
@@ -107,9 +107,12 @@
             <a class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
                 href="forth.html">Vrednost</a>
         </div>
-        <div class="hidden md:flex items-center gap-2 px-5 py-2 border border-tertiary/40 rounded-lg">
-            <span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
-            <span class="text-tertiary font-bold text-xs uppercase tracking-widest">Sistem deluje</span>
+        <div class="hidden md:flex items-center gap-10">
+            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="index.html">Pregled stanja</a>
+            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="sixth.html">Infrastruktura</a>
+            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="seventh.html">Avtomatizacija</a>
+            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="seo.html">SEO</a>
+            <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="forth.html">Vrednost</a>
         </div>
     </nav>
     <!-- SideNavBar -->
@@ -134,13 +137,13 @@
                     <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Povzetek</span>
                 </a>
                 <a class="flex items-center px-6 py-3 space-x-4 bg-[#00daf3]/10 text-[#00daf3] rounded-r-full transition-all duration-300"
-                    href="second.html">
+                    href="sixth.html">
                     <span class="material-symbols-outlined" data-icon="dns">dns</span>
                     <span
                         class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Infrastruktura</span>
                 </a>
                 <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300"
-                    href="third.html">
+                    href="seventh.html">
                     <span class="material-symbols-outlined" data-icon="hub">hub</span>
                     <span
                         class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Avtomatizacija</span>
@@ -336,7 +339,7 @@
                 <div class="text-right">
                     <p class="text-sm text-on-surface-variant italic mb-2">"Infrastruktura ni le strošek; je temelj
                         konverzij."</p>
-                    <p class="text-xs font-bold text-on-surface">— Tehnični odbor Stitch/IO</p>
+                    <p class="text-xs font-bold text-on-surface">— MakerToo/Io-Natural</p>
                 </div>
             </div>
         </footer>
@@ -349,7 +352,7 @@
         <div class="flex items-center justify-between px-5 py-4 border-b border-white/5">
             <div>
                 <div class="text-primary font-bold text-[10px] uppercase tracking-widest mb-0.5">Navigacija</div>
-                <div class="text-on-surface font-black text-base" style="font-family:Manrope,sans-serif">MakerToo/Io-Natural</div>
+                <a href="index.html" class="text-on-surface font-black text-base hover:opacity-80 transition-opacity" style="font-family:Manrope,sans-serif">MakerToo/Io-Natural</a>
             </div>
             <button onclick="toggleMobileMenu()" class="p-2 -mr-2 text-on-surface-variant hover:text-on-surface transition-colors rounded-lg hover:bg-white/5">
                 <span class="material-symbols-outlined">close</span>
@@ -358,16 +361,15 @@
         <nav class="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
             <a href="index.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
                 <span class="material-symbols-outlined text-xl shrink-0">analytics</span>
-                <span class="font-bold text-sm uppercase tracking-wide flex-1">Pregled</span>
+                <span class="font-bold text-sm uppercase tracking-wide flex-1">Pregled stanja</span>
             </a>
-            <a href="second.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl bg-primary/10 text-primary transition-all duration-200">
+            <a href="sixth.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
                 <span class="material-symbols-outlined text-xl shrink-0">dns</span>
-                <span class="font-bold text-sm uppercase tracking-wide flex-1">Tehnologija</span>
-                <span class="material-symbols-outlined text-sm shrink-0">chevron_right</span>
+                <span class="font-bold text-sm uppercase tracking-wide flex-1">Infrastruktura</span>
             </a>
-            <a href="third.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
+            <a href="seventh.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
                 <span class="material-symbols-outlined text-xl shrink-0">hub</span>
-                <span class="font-bold text-sm uppercase tracking-wide flex-1">Trženje</span>
+                <span class="font-bold text-sm uppercase tracking-wide flex-1">Avtomatizacija</span>
             </a>
             <a href="seo.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
                 <span class="material-symbols-outlined text-xl shrink-0">trending_up</span>
