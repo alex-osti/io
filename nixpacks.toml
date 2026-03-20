@@ -1,0 +1,5 @@
+[phases.build]
+cmds = ["mkdir -p dist", "cp -v *.html *.js *.png *.ico *.svg *.webmanifest dist/ 2>/dev/null || true"]
+
+[variables]
+NIXPACKS_STATICFILE_DIRECTORY = "dist"
