@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="dark" lang="sl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>WP in SEO Optimizacija | MakerToo/Io-Natural</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#0d0e12",
+                        "secondary-container": "#3e4960",
+                        "on-surface-variant": "#c4c6cc",
+                        "on-primary-fixed-variant": "#004f58",
+                        "surface-container-high": "#292a2e",
+                        "on-secondary-fixed-variant": "#3c475d",
+                        "inverse-surface": "#e3e2e8",
+                        "on-primary": "#00363d",
+                        "on-primary-container": "#0090a1",
+                        "outline": "#8e9196",
+                        "on-tertiary-container": "#05974d",
+                        "outline-variant": "#44474c",
+                        "tertiary": "#66dd8b",
+                        "primary": "#00daf3",
+                        "secondary": "#bbc6e2",
+                        "surface-container-low": "#1a1b20",
+                        "surface-dim": "#121317",
+                        "on-secondary": "#263046",
+                        "tertiary-fixed": "#83fba5",
+                        "on-secondary-fixed": "#101b30",
+                        "on-surface": "#e3e2e8",
+                        "primary-fixed-dim": "#00daf3",
+                        "background": "#121317",
+                        "tertiary-container": "#00200b"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .insight-ribbon {
+            border-left: 2px solid #66dd8b;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-8 py-4 md:py-6 bg-[#121317]/80 backdrop-blur-xl shadow-[0_48px_48px_rgba(0,218,243,0.04)]">
+        <div class="text-xl md:text-2xl font-black tracking-tighter text-[#e3e2e8]">MakerToo/Io-Natural</div>
+        
+        <!-- Mobile Menu Toggle (visually hidden but allows structure consistency) -->
+        <button class="md:hidden text-on-surface">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+
+        <div class="hidden md:flex space-x-6 lg:space-x-8">
+            <a class="font-['Manrope'] text-xs lg:text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors" href="first.html">Pregled</a>
+            <a class="font-['Manrope'] text-xs lg:text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors" href="second.html">Tehnologija</a>
+            <a class="font-['Manrope'] text-xs lg:text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors" href="third.html">Trženje</a>
+            <a class="font-['Manrope'] text-xs lg:text-sm tracking-wide uppercase font-bold text-[#00daf3] border-b-2 border-[#00daf3] pb-1" href="seo.html">SEO</a>
+            <a class="font-['Manrope'] text-xs lg:text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors" href="forth.html">Vrednost</a>
+        </div>
+        
+        <div class="hidden md:flex items-center gap-2 px-3 lg:px-5 py-2 border border-tertiary/40 rounded-lg">
+            <span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
+            <span class="text-tertiary font-bold text-[10px] lg:text-xs uppercase tracking-widest">Sistem deluje</span>
+        </div>
+    </nav>
+
+    <!-- SideNavBar (Hidden on Mobile) -->
+    <aside class="hidden md:flex fixed left-0 top-24 bottom-0 flex-col items-center py-8 bg-[#121317] h-full w-20 hover:w-64 transition-all duration-500 z-40 bg-gradient-to-r from-[#1a1b20] to-transparent group">
+        <div class="flex flex-col items-center space-y-8 w-full">
+            <div class="flex items-center px-6 w-full space-x-4">
+                <div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center flex-shrink-0">
+                    <span class="material-symbols-outlined text-primary">search</span>
+                </div>
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-hidden whitespace-nowrap">
+                    <p class="text-[#00daf3] font-bold text-sm">Projekt Alfa</p>
+                    <p class="text-on-surface-variant text-[10px]">Strateško poročilo</p>
+                </div>
+            </div>
+            <nav class="flex flex-col w-full space-y-2">
+                <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300" href="first.html">
+                    <span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+                    <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Povzetek</span>
+                </a>
+                <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300" href="second.html">
+                    <span class="material-symbols-outlined" data-icon="dns">dns</span>
+                    <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Infrastruktura</span>
+                </a>
+                <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300" href="third.html">
+                    <span class="material-symbols-outlined" data-icon="hub">hub</span>
+                    <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Avtomatizacija</span>
+                </a>
+                <a class="flex items-center px-6 py-3 space-x-4 bg-[#00daf3]/10 text-[#00daf3] rounded-r-full transition-all duration-300" href="seo.html">
+                    <span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+                    <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">SEO</span>
+                </a>
+                <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300" href="forth.html">
+                    <span class="material-symbols-outlined" data-icon="payments">payments</span>
+                    <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Vrednost</span>
+                </a>
+            </nav>
+            <div class="mt-auto px-4 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="w-full py-2 bg-tertiary/10 text-tertiary border border-tertiary/20 rounded-lg text-xs font-bold text-center">
+                    SEO aktiven
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="md:ml-20 pt-24 md:pt-32 px-6 md:px-12 pb-24 max-w-7xl mx-auto">
+        <!-- Header Section -->
+        <header class="mb-12 md:mb-20">
+            <h1 class="font-headline text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter text-on-surface mb-4 md:mb-6">
+                Tehnični in vsebinski <br class="hidden md:block" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">SEO ekosistem.</span>
+            </h1>
+            <div class="insight-ribbon pl-4 md:pl-6 py-2">
+                <p class="text-on-surface-variant text-base md:text-lg max-w-2xl leading-relaxed">
+                    WordPress arhitektura prilagojena za dominacijo v iskalnikih. Čist zapis, optimizirana hitrost in strukturirani podatki, ki Google pajkom omogočajo 100% razumevanje vašega konteksta.
+                </p>
+            </div>
+        </header>
+
+        <!-- Bento Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 md:gap-8">
+            
+            <!-- Server-Side Speed (Large) -->
+            <section class="lg:col-span-8 bg-surface-container-low rounded-xl p-6 md:p-8 transition-all hover:bg-surface-container-high">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-8 md:mb-12">
+                    <div>
+                        <h3 class="font-headline text-primary text-xs md:text-sm font-bold uppercase tracking-widest mb-2">Temelj za uvrščanje</h3>
+                        <h2 class="text-2xl md:text-3xl font-bold">Speed Index in Core Web Vitals</h2>
+                    </div>
+                    <span class="material-symbols-outlined text-primary text-3xl md:text-4xl mt-4 md:mt-0" data-icon="speed">speed</span>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                    <div class="space-y-6">
+                        <p class="text-on-surface-variant text-sm">Hitrost ni le uporabniška izkušnja; je primarni faktor za Google. Z integriranim Redis predpomnjenjem in debloat optimizacijo WordPressa presegamo industrijske standarde.</p>
+                        <div class="space-y-4">
+                            <div class="flex justify-between text-[10px] md:text-xs font-bold uppercase tracking-tighter">
+                                <span>LCP (Largest Contentful Paint)</span>
+                                <span class="text-tertiary">&lt; 1.2s</span>
+                            </div>
+                            <div class="h-1 bg-surface-container-highest rounded-full overflow-hidden">
+                                <div class="h-full bg-tertiary w-[95%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-lowest p-5 md:p-6 rounded-lg border border-outline-variant/10">
+                        <div class="flex items-center space-x-3 md:space-x-4 mb-4">
+                            <span class="material-symbols-outlined text-tertiary text-sm md:text-base" data-icon="check_circle">check_circle</span>
+                            <span class="text-xs md:text-sm font-bold">Avtomatski WebP formati</span>
+                        </div>
+                        <div class="flex items-center space-x-3 md:space-x-4 mb-4">
+                            <span class="material-symbols-outlined text-tertiary text-sm md:text-base" data-icon="check_circle">check_circle</span>
+                            <span class="text-xs md:text-sm font-bold">CSS/JS Minifikacija in zamiki</span>
+                        </div>
+                        <div class="flex items-center space-x-3 md:space-x-4">
+                            <span class="material-symbols-outlined text-tertiary text-sm md:text-base" data-icon="check_circle">check_circle</span>
+                            <span class="text-xs md:text-sm font-bold">Baza brez odvečnega trasha (Debloated)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Structured Data (Small) -->
+            <section class="lg:col-span-4 bg-surface-container-low rounded-xl p-6 md:p-8 flex flex-col justify-between">
+                <div>
+                    <span class="material-symbols-outlined text-primary mb-4" data-icon="data_object">data_object</span>
+                    <h3 class="font-headline text-on-surface text-lg md:text-xl font-bold mb-2">Schema.org in semantika</h3>
+                    <p class="text-on-surface-variant text-xs md:text-sm mb-6">Bogati rezultati niso naključje. Sistemsko implementiran JSON-LD za strukturirane podatke na vseh ključnih straneh.</p>
+                </div>
+                <div class="bg-surface-dim p-4 rounded border border-outline-variant/20 font-mono text-[10px] md:text-xs text-primary overflow-hidden">
+                    {"@context": "https://schema.org",<br/>
+                     "@type": "WebSite",<br/>
+                     "name": "MakerToo/Io-Natural"}
+                </div>
+            </section>
+
+            <!-- On-Page Optimizacija (Half-width) -->
+            <section class="lg:col-span-6 bg-surface-container-low rounded-xl p-6 md:p-8">
+                <div class="flex items-center space-x-3 mb-6">
+                    <span class="material-symbols-outlined text-tertiary" data-icon="edit_note">edit_note</span>
+                    <h3 class="font-headline text-on-surface text-lg md:text-xl font-bold">On-Page Avtomatizacija</h3>
+                </div>
+                <ul class="space-y-4">
+                    <li class="flex items-start space-x-3">
+                        <span class="w-1.5 h-1.5 bg-tertiary rounded-full mt-1.5 shrink-0"></span>
+                        <div>
+                            <span class="text-sm font-medium block mb-1">Pravilna hierarhija (H1-H4)</span>
+                            <span class="text-xs text-on-surface-variant block leading-relaxed">Nič več zlomljenih naslovov. Vsak predlog (template) prisilno spoštuje semantični red, ki ga zahteva algoritem.</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="w-1.5 h-1.5 bg-tertiary rounded-full mt-1.5 shrink-0"></span>
+                        <div>
+                            <span class="text-sm font-medium block mb-1">Dinamični Meta Tagovi</span>
+                            <span class="text-xs text-on-surface-variant block leading-relaxed">Generiranje meta naslovov in opisov na podlagi vsebine s pravilno dolžino za mibilni in namizni prikaz.</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Technical Mapping (Half-width) -->
+            <section class="lg:col-span-6 bg-surface-container-low rounded-xl p-6 md:p-8">
+                <div class="flex items-center space-x-3 mb-6">
+                    <span class="material-symbols-outlined text-primary" data-icon="route">route</span>
+                    <h3 class="font-headline text-on-surface text-lg md:text-xl font-bold">Tehnično mapiranje</h3>
+                </div>
+                <ul class="space-y-4">
+                    <li class="flex items-start space-x-3">
+                        <span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 shrink-0"></span>
+                        <div>
+                            <span class="text-sm font-medium block mb-1">Dinamičen XML Sitemap</span>
+                            <span class="text-xs text-on-surface-variant block leading-relaxed">Samodejna obvestila iskalnikom o novih ali posodobljenih vsebinah (pinganje).</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <span class="w-1.5 h-1.5 bg-primary rounded-full mt-1.5 shrink-0"></span>
+                        <div>
+                            <span class="text-sm font-medium block mb-1">Gostota notranjih povezav</span>
+                            <span class="text-xs text-on-surface-variant block leading-relaxed">Pametna arhitektura siluirane (silo) vsebine, ki preliva "link juice" iz ključnih strani na konverzijske landing page.</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Mobile Check KPI (Full Width) -->
+        <section class="mt-8 bg-surface-container-low rounded-xl p-6 md:p-8 border border-tertiary/20 flex flex-col md:flex-row items-center justify-between gap-6 overflow-hidden relative">
+            <div class="z-10 text-center md:text-left">
+                <h4 class="text-tertiary text-xs font-bold uppercase tracking-widest mb-1">Mobile-First Indeksiranje</h4>
+                <div class="text-xl md:text-2xl font-black mb-1">100% Optimizirano za mobilne naprave</div>
+                <p class="text-xs text-on-surface-variant">Prikaz celotnega vmesnika in strukture vsebine je prilagojen za mobilne zrcalne preglede Googla, saj ti predstavljajo primarni način razvrščanja v letu 2024+.</p>
+            </div>
+            <div class="z-10 shrink-0 bg-surface-container p-4 rounded-full">
+                <span class="material-symbols-outlined text-5xl text-tertiary" data-icon="smartphone">smartphone</span>
+            </div>
+            <div class="absolute right-0 top-0 h-full w-1/3 bg-gradient-to-l from-tertiary/5 to-transparent pointer-events-none"></div>
+        </section>
+
+        <!-- Footer Callout -->
+        <footer class="mt-16 md:mt-24 border-t border-outline-variant/10 pt-8 md:pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="text-on-surface-variant font-medium text-sm md:text-base">Tehnična SEO implementacija</span>
+                <p class="text-[10px] text-on-surface-variant/60 uppercase tracking-widest mt-1">Generirano: {{DATA:TEXT:TEXT_1}}</p>
+            </div>
+            <div class="flex items-center justify-center gap-2 text-primary font-bold text-xs md:text-sm">
+                <span class="material-symbols-outlined text-base md:text-lg">check_circle</span>
+                Konfigurirano in indeksirano
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
