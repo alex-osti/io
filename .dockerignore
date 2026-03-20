@@ -1,0 +1,11 @@
+.git
+.gstack
+.next
+node_modules
+web
+update_contents.py
+fix_nav.py
+DESIGN.md
+Poročilo.md
+Dockerfile
+.dockerignore
