@@ -106,47 +106,42 @@
             </div>
         </div>
     </nav>
-<!-- SideNavBar Implementation -->
-<aside class="hidden md:flex md:flex-col fixed md:left-0 md:top-24 md:bottom-0 md:w-20 md:hover:w-64 items-start justify-start md:py-8 bg-[#121317] md:border-r border-outline-variant/10 z-40 group md:overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#1a1b20] to-transparent">
-<div class="mb-12 px-4 flex items-center w-full overflow-hidden">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary">analytics</span>
-</div>
-<div class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
-<p class="text-lg font-bold text-[#00daf3] font-headline">Projekt Alpha</p>
-<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Strateško tehnično poročilo</p>
-</div>
-</div>
-<nav class="flex flex-row md:flex-col w-full space-y-4">
-<a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="index.html">
-<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
-<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Povzetek</span>
-</a>
-<a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="sixth.html">
-<span class="material-symbols-outlined" data-icon="dns">dns</span>
-<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Infrastruktura</span>
-</a>
-<a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="seventh.html">
-<span class="material-symbols-outlined" data-icon="hub">hub</span>
-<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Avtomatizacija</span>
-</a>
-<a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="seo.html"><span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
-<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">SEO</span>
-</a>
-<a class="flex items-center px-6 py-3 bg-[#00daf3]/10 text-[#00daf3] rounded-r-full transition-all duration-500" href="forth.html">
-<span class="material-symbols-outlined" data-icon="payments" style="font-variation-settings: 'FILL' 1;">payments</span>
-<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Vrednost</span>
-</a>
-</nav>
-<div class="mt-auto p-4 w-full">
-<div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-tertiary/10 rounded-xl p-4 text-center">
-<p class="text-[10px] text-tertiary font-bold uppercase tracking-widest">✓ Vzpostavljeno</p>
-</div>
-</div>
-</aside>
+<!-- Sidebar -->
+
+    <aside class="hidden md:flex md:flex-col fixed md:left-0 md:top-24 md:bottom-0 md:w-20 md:hover:w-64 items-start justify-start md:py-8 bg-[#121317] md:border-r border-white/5 z-40 group md:overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#1a1b20] to-transparent shadow-2xl shadow-black/50">
+        <div class="flex flex-col gap-8 w-full px-4">
+            <a class="flex items-center gap-4 py-3 px-3  text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-primary transition-all duration-300 ease-out" href="index.html">
+                <span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+                <span class="opacity-0 group-hover:opacity-100 font-medium text-xs font-['Inter'] whitespace-nowrap">Povzetek stanja</span>
+            </a>
+            <a class="flex items-center gap-4 py-3 px-3  text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-primary transition-all duration-300 ease-out" href="sixth.html">
+                <span class="material-symbols-outlined" data-icon="dns">dns</span>
+                <span class="opacity-0 group-hover:opacity-100 font-medium text-xs font-['Inter'] whitespace-nowrap">Infrastruktura</span>
+            </a>
+            <a class="flex items-center gap-4 py-3 px-3  text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-primary transition-all duration-300 ease-out" href="seventh.html">
+                <span class="material-symbols-outlined" data-icon="hub">hub</span>
+                <span class="opacity-0 group-hover:opacity-100 font-medium text-xs font-['Inter'] whitespace-nowrap">Avtomatizacija</span>
+            </a>
+            <a class="flex items-center gap-4 py-3 px-3  text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-primary transition-all duration-300 ease-out" href="seo.html">
+                <span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+                <span class="opacity-0 group-hover:opacity-100 font-medium text-xs font-['Inter'] whitespace-nowrap">SEO zmogljivost</span>
+            </a>
+            <a class="flex items-center gap-4 py-3 px-3 bg-primary/10 text-primary opacity-100 rounded-r-full font-bold shadow-md shadow-primary/20 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-primary transition-all duration-300 ease-out" href="forth.html">
+                <span class="material-symbols-outlined" data-icon="payments">payments</span>
+                <span class="opacity-0 group-hover:opacity-100 font-medium text-xs font-['Inter'] whitespace-nowrap">Vrednost projekta</span>
+            </a>
+        </div>
+        <div class="mt-auto px-4 pb-8 w-full">
+            <div class="w-full bg-primary/10 border border-primary/20 text-primary text-[10px] py-3 rounded-lg opacity- group-hover:opacity-100 transition-opacity whitespace-nowrap text-center font-bold tracking-widest uppercase">
+                2026 Verified
+            </div>
+        </div>
+    </aside>
 <!-- Main Content Canvas -->
-<main class="ml-0 md:ml-20 pt-24 md:pt-32 px-4 md:px-12 pb-16 max-w-7xl mx-auto">
-<!-- Hero Section: Editorial Headline -->
+
+    <main class="md:ml-20 pt-24 md:pt-32 pb-16">
+        <div class="max-w-7xl mx-auto px-4 md:px-12 lg:px-24">
+            <!-- Hero Section: Editorial Headline -->
 <header class="mb-12 md:mb-24 flex flex-col md:flex-row justify-between items-end gap-8 md:gap-12">
 <div class="max-w-2xl">
 <span class="text-tertiary font-headline font-bold text-sm tracking-[0.2em] uppercase mb-4 block">Eksekutivna revizija 2026</span>
@@ -334,7 +329,8 @@
 </a>
 </div>
 </section>
-</main>
+        </div>
+    </main>
 <!-- Visual Textures (Abstract) -->
 <div class="fixed bottom-0 right-0 p-12 opacity-5 pointer-events-none">
 <span class="text-[20vw] font-black font-headline tracking-tighter text-outline select-none">VREDNOST</span>
