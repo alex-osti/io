@@ -83,21 +83,24 @@
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
 <!-- TopNavBar Implementation -->
-<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-[#121317]/80 backdrop-blur-xl shadow-[0_48px_48px_rgba(0,218,243,0.04)]">
-<div class="text-2xl font-black tracking-tighter text-[#e3e2e8] font-headline">MakerToo/Io-Natural</div>
-<div class="hidden md:flex items-center space-x-12">
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-8 py-4 md:py-6 bg-[#121317]/80 backdrop-blur-xl shadow-[0_48px_48px_rgba(0,218,243,0.04)]">
+<div class="text-lg sm:text-xl md:text-2xl font-black tracking-tighter text-[#e3e2e8] font-headline max-w-[60%] sm:max-w-none truncate">MakerToo/Io-Natural</div>
+<button onclick="toggleMobileMenu()" class="md:hidden text-on-surface ml-auto mr-4 cursor-pointer hover:bg-surface-bright/20 rounded-lg p-2 transition-colors">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+            <div class="hidden md:flex items-center space-x-12">
 <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="first.html">Pregled</a>
 <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="second.html">Tehnologija</a>
 <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="third.html">Trženje</a>
 <a class="font-headline text-sm tracking-wide uppercase font-bold text-[#00daf3] border-b-2 border-[#00daf3] pb-1" href="forth.html">Vrednost</a>
 </div>
-<div class="flex items-center gap-2 px-5 py-2 border border-tertiary/40 rounded-lg">
+<div class="hidden md:flex items-center gap-2 px-5 py-2 border border-tertiary/40 rounded-lg">
     <span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
     <span class="text-tertiary font-headline font-bold text-xs uppercase tracking-widest">Projekt zaključen</span>
 </div>
 </nav>
 <!-- SideNavBar Implementation -->
-<aside class="fixed left-0 top-24 bottom-0 flex flex-col items-center py-8 bg-[#121317] h-full w-20 hover:w-64 transition-all duration-500 z-40 bg-gradient-to-r from-[#1a1b20] to-transparent group">
+<aside class="fixed left-0 right-0 bottom-0 top-auto md:top-24 md:bottom-0 w-full md:w-20 md:hover:w-64 flex flex-row md:flex-col items-center justify-between md:justify-start px-4 md:px-0 py-2 md:py-8 bg-[#121317] border-t md:border-t-0 md:border-r border-outline-variant/10 z-50 group overflow-x-auto overflow-y-hidden md:overflow-x-hidden md:overflow-y-hidden bg-gradient-to-t md:bg-gradient-to-r from-[#1a1b20] to-transparent">
 <div class="mb-12 px-4 flex items-center w-full overflow-hidden">
 <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
 <span class="material-symbols-outlined text-primary">analytics</span>
@@ -107,7 +110,7 @@
 <p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Strateško tehnično poročilo</p>
 </div>
 </div>
-<nav class="flex flex-col w-full space-y-4">
+<nav class="flex flex-row md:flex-col w-full space-y-4">
 <a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="first.html">
 <span class="material-symbols-outlined" data-icon="analytics">analytics</span>
 <span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Povzetek</span>
@@ -135,7 +138,7 @@
 </div>
 </aside>
 <!-- Main Content Canvas -->
-<main class="ml-20 pt-32 px-12 pb-24 max-w-7xl mx-auto">
+<main class="ml-0 md:ml-20 pt-24 md:pt-32 px-4 md:px-12 pb-24 md:pb-24 pb-28 max-w-7xl mx-auto">
 <!-- Hero Section: Editorial Headline -->
 <header class="mb-24 flex flex-col md:flex-row justify-between items-end gap-12">
 <div class="max-w-2xl">
@@ -227,4 +230,38 @@
 <div class="fixed bottom-0 right-0 p-12 opacity-5 pointer-events-none">
 <span class="text-[20vw] font-black font-headline tracking-tighter text-outline select-none">VREDNOST</span>
 </div>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed inset-0 bg-[#0d0e12]/98 backdrop-blur-3xl z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col pt-6 px-6 md:hidden">
+    <div class="flex justify-between items-center w-full mb-8">
+        <div class="text-xl font-black text-primary font-headline">Strateški Meni</div>
+        <button onclick="toggleMobileMenu()" class="text-on-surface p-2 hover:bg-surface-bright/20 rounded-full transition-colors">
+            <span class="material-symbols-outlined text-3xl">close</span>
+        </button>
+    </div>
+    
+    <div class="flex flex-col items-start w-full border-t border-white/5 pt-6 text-on-surface">
+        
+<a class="font-headline text-2xl py-4 border-b border-outline-variant/10 w-full font-bold tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="first.html">Pregled</a>
+<a class="font-headline text-2xl py-4 border-b border-outline-variant/10 w-full font-bold tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="second.html">Tehnologija</a>
+<a class="font-headline text-2xl py-4 border-b border-outline-variant/10 w-full font-bold tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="third.html">Trženje</a>
+<a class="font-headline text-2xl py-4 border-b border-outline-variant/10 w-full font-bold tracking-wide uppercase font-bold text-[#00daf3] border-b-2 border-[#00daf3] text-primary" href="forth.html">Vrednost</a>
+
+    </div>
+    
+    <div class="mt-auto pb-12 w-full flex justify-center">
+        <div class="flex items-center gap-2 px-6 py-4 bg-tertiary/10 border border-tertiary/20 rounded-xl shadow-[0_0_20px_rgba(102,221,139,0.1)]">
+            <span class="h-3 w-3 rounded-full bg-tertiary animate-pulse"></span>
+            <span class="text-tertiary font-bold text-sm uppercase tracking-widest">Sistem Deluje</span>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleMobileMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('translate-x-full');
+        document.body.classList.toggle('overflow-hidden'); // Prevent background scroll
+    }
+</script>
 </body></html>
