@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="sl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MakerToo/Io-Natural - Investicija in tržna vrednost</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#0d0e12",
+              "secondary-container": "#3e4960",
+              "on-surface-variant": "#c4c6cc",
+              "on-primary-fixed-variant": "#004f58",
+              "surface-container-high": "#292a2e",
+              "on-secondary-fixed-variant": "#3c475d",
+              "inverse-surface": "#e3e2e8",
+              "on-primary": "#00363d",
+              "on-primary-container": "#0090a1",
+              "outline": "#8e9196",
+              "on-tertiary-container": "#05974d",
+              "outline-variant": "#44474c",
+              "tertiary": "#66dd8b",
+              "primary": "#00daf3",
+              "secondary": "#bbc6e2",
+              "surface-container-low": "#1a1b20",
+              "surface-dim": "#121317",
+              "on-secondary": "#263046",
+              "tertiary-fixed": "#83fba5",
+              "on-secondary-fixed": "#101b30",
+              "on-surface": "#e3e2e8",
+              "primary-fixed-dim": "#00daf3",
+              "on-error": "#690005",
+              "inverse-on-surface": "#2f3035",
+              "on-tertiary-fixed-variant": "#005227",
+              "error-container": "#93000a",
+              "surface-variant": "#343439",
+              "on-secondary-container": "#adb8d3",
+              "inverse-primary": "#006875",
+              "background": "#121317",
+              "tertiary-fixed-dim": "#66dd8b",
+              "on-tertiary-fixed": "#00210c",
+              "primary-container": "#001e22",
+              "on-error-container": "#ffdad6",
+              "on-primary-fixed": "#001f24",
+              "secondary-fixed-dim": "#bbc6e2",
+              "surface-container-highest": "#343439",
+              "primary-fixed": "#9cf0ff",
+              "secondary-fixed": "#d7e2ff",
+              "surface-tint": "#00daf3",
+              "surface-container": "#1f1f24",
+              "on-tertiary": "#003919",
+              "error": "#ffb4ab",
+              "on-background": "#e3e2e8",
+              "surface-bright": "#38393e",
+              "surface": "#121317",
+              "tertiary-container": "#00200b"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(52, 52, 57, 0.6);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Implementation -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-[#121317]/80 backdrop-blur-xl shadow-[0_48px_48px_rgba(0,218,243,0.04)]">
+<div class="text-2xl font-black tracking-tighter text-[#e3e2e8] font-headline">MakerToo/Io-Natural</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="first.html">Pregled</a>
+<a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="second.html">Tehnologija</a>
+<a class="font-headline text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300" href="third.html">Trženje</a>
+<a class="font-headline text-sm tracking-wide uppercase font-bold text-[#00daf3] border-b-2 border-[#00daf3] pb-1" href="forth.html">Vrednost</a>
+</div>
+<div class="flex items-center gap-2 px-5 py-2 border border-tertiary/40 rounded-lg">
+    <span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
+    <span class="text-tertiary font-headline font-bold text-xs uppercase tracking-widest">Projekt zaključen</span>
+</div>
+</nav>
+<!-- SideNavBar Implementation -->
+<aside class="fixed left-0 top-24 bottom-0 flex flex-col items-center py-8 bg-[#121317] h-full w-20 hover:w-64 transition-all duration-500 z-40 bg-gradient-to-r from-[#1a1b20] to-transparent group">
+<div class="mb-12 px-4 flex items-center w-full overflow-hidden">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<div class="ml-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap">
+<p class="text-lg font-bold text-[#00daf3] font-headline">Projekt Alpha</p>
+<p class="text-[10px] text-on-surface-variant uppercase tracking-tighter">Strateško tehnično poročilo</p>
+</div>
+</div>
+<nav class="flex flex-col w-full space-y-4">
+<a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="first.html">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Povzetek</span>
+</a>
+<a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="second.html">
+<span class="material-symbols-outlined" data-icon="dns">dns</span>
+<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Infrastruktura</span>
+</a>
+<a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="third.html">
+<span class="material-symbols-outlined" data-icon="hub">hub</span>
+<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Avtomatizacija</span>
+</a>
+<a class="flex items-center px-6 py-3 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-500" href="forth.html">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">SEO</span>
+</a>
+<a class="flex items-center px-6 py-3 bg-[#00daf3]/10 text-[#00daf3] rounded-r-full transition-all duration-500" href="forth.html">
+<span class="material-symbols-outlined" data-icon="payments" style="font-variation-settings: 'FILL' 1;">payments</span>
+<span class="ml-6 opacity-0 group-hover:opacity-100 transition-opacity font-medium text-xs">Vrednost</span>
+</a>
+</nav>
+<div class="mt-auto p-4 w-full">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-tertiary/10 rounded-xl p-4 text-center">
+<p class="text-[10px] text-tertiary font-bold uppercase tracking-widest">✓ Vzpostavljeno</p>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="ml-20 pt-32 px-12 pb-24 max-w-7xl mx-auto">
+<!-- Hero Section: Editorial Headline -->
+<header class="mb-24 flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="max-w-2xl">
+<span class="text-tertiary font-headline font-bold text-sm tracking-[0.2em] uppercase mb-4 block">Eksekutivna revizija 2024</span>
+<h1 class="text-6xl md:text-8xl font-black font-headline tracking-tighter text-on-surface leading-none">
+                    Vrednost vaših digitalnih sredstev.
+                </h1>
+</div>
+<div class="pb-4">
+<div class="flex items-center space-x-3 text-on-surface-variant">
+<span class="w-12 h-[1px] bg-primary"></span>
+<p class="text-sm font-medium tracking-tight uppercase">Povzetek strateškega vrednotenja</p>
+</div>
+</div>
+</header>
+<!-- Bento Grid Layout for Value Cards -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Hero Asset: Engineering & Integration (Bento Large) -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-12 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="relative z-10 h-full flex flex-col">
+<div class="flex items-center space-x-4 mb-12">
+<span class="material-symbols-outlined text-primary scale-125" data-icon="architecture">architecture</span>
+<h3 class="font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant">Vrednost inženiringa in integracije</h3>
+</div>
+<div class="mt-auto">
+<span class="text-7xl md:text-9xl font-black font-headline text-primary tracking-tighter mb-4 block">15k — 25k €</span>
+<div class="flex flex-wrap gap-4 mt-8">
+<span class="px-4 py-2 bg-surface-container-highest/50 rounded-full text-xs font-bold text-on-surface border border-outline-variant/20 uppercase tracking-widest">Docker Orkestracija</span>
+<span class="px-4 py-2 bg-surface-container-highest/50 rounded-full text-xs font-bold text-on-surface border border-outline-variant/20 uppercase tracking-widest">CRM Logična plast</span>
+<span class="px-4 py-2 bg-surface-container-highest/50 rounded-full text-xs font-bold text-on-surface border border-outline-variant/20 uppercase tracking-widest">SEO Sheme</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Recurring Value (Bento Small - Tall) -->
+<div class="md:col-span-4 bg-tertiary-container rounded-xl p-10 border-l-4 border-tertiary flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-tertiary mb-6 block text-4xl" data-icon="autorenew">autorenew</span>
+<h3 class="font-headline font-bold text-sm uppercase tracking-widest text-tertiary mb-2">Strateško upravljanje in marketing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Celovit nadzor ekosistema in svetovanje za rast.</p>
+</div>
+<div class="mt-12">
+<span class="text-5xl font-black font-headline text-tertiary tracking-tighter block">1k — 3k €</span>
+<span class="text-on-tertiary-container font-medium text-sm tracking-widest uppercase">/ mesec (Pavšal)</span>
+</div>
+</div>
+<!-- Licensing Block (Bento Medium - Wide) -->
+<div class="md:col-span-7 bg-surface-container-high rounded-xl p-10 flex items-center justify-between">
+<div>
+<h3 class="font-headline font-bold text-sm uppercase tracking-widest text-on-surface-variant mb-4">Skupaj licence za programsko opremo</h3>
+<p class="text-on-surface-variant text-sm max-w-xs leading-relaxed">Optimiziran nabor orodij poslovnega razreda, vključno z oblačno infrastrukturo in varnostnimi protokoli.</p>
+</div>
+<div class="text-right">
+<span class="text-5xl font-black font-headline text-on-surface tracking-tighter block">~2.7k €</span>
+<span class="text-primary font-bold text-xs tracking-widest uppercase">Letni operativni strošek programske opreme</span>
+</div>
+</div>
+<!-- Insight Ribbon Callout (Bento Small) -->
+<div class="md:col-span-5 glass-card rounded-xl p-10 flex flex-col justify-center border border-outline-variant/10">
+<div class="flex items-start space-x-6">
+<div class="w-1 h-24 bg-gradient-to-b from-tertiary to-transparent rounded-full"></div>
+<div>
+<p class="text-on-surface-variant text-xs font-bold uppercase tracking-[0.3em] mb-4">Arhitekturna revizija</p>
+<p class="text-lg font-light leading-relaxed text-on-surface italic">
+                            "Ves inženirski trud v zaledju — <span class="text-primary font-bold">Docker</span> vsebniki, <span class="text-primary font-bold">CRM</span> procesi po meri in <span class="text-primary font-bold">SEO</span> semantično mapiranje — predstavlja močno konkurenčno prednost tega projekta."
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Strategic Footer / CTA -->
+<section class="mt-24 pt-12 border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-12">
+<div>
+<h4 class="text-2xl font-black font-headline text-on-surface mb-2 tracking-tight">Ste pripravljeni aktivirati ta kapital?</h4>
+<p class="text-on-surface-variant text-sm">Vaša infrastruktura ni več le strošek, temveč strateško sredstvo.</p>
+</div>
+<div class="flex space-x-6">
+<a href="first.html" class="px-8 py-4 rounded-lg bg-surface-container-highest text-on-surface font-headline font-bold text-xs uppercase tracking-[0.2em] border border-outline-variant/20 hover:bg-surface-bright transition-all">
+    Poglej izvodni povzetek
+</a>
+<a href="fifth.html" class="px-8 py-4 rounded-lg bg-gradient-to-br from-primary to-on-primary-container text-on-primary-fixed font-headline font-bold text-xs uppercase tracking-[0.2em] shadow-lg shadow-primary/20">
+    Vzpostavljeno stanje →
+</a>
+</div>
+</section>
+</main>
+<!-- Visual Textures (Abstract) -->
+<div class="fixed bottom-0 right-0 p-12 opacity-5 pointer-events-none">
+<span class="text-[20vw] font-black font-headline tracking-tighter text-outline select-none">VREDNOST</span>
+</div>
+</body></html>

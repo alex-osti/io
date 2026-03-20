@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="sl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Infrastruktura in inženirska odličnost | MakerToo/Io-Natural</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#0d0e12",
+                        "secondary-container": "#3e4960",
+                        "on-surface-variant": "#c4c6cc",
+                        "on-primary-fixed-variant": "#004f58",
+                        "surface-container-high": "#292a2e",
+                        "on-secondary-fixed-variant": "#3c475d",
+                        "inverse-surface": "#e3e2e8",
+                        "on-primary": "#00363d",
+                        "on-primary-container": "#0090a1",
+                        "outline": "#8e9196",
+                        "on-tertiary-container": "#05974d",
+                        "outline-variant": "#44474c",
+                        "tertiary": "#66dd8b",
+                        "primary": "#00daf3",
+                        "secondary": "#bbc6e2",
+                        "surface-container-low": "#1a1b20",
+                        "surface-dim": "#121317",
+                        "on-secondary": "#263046",
+                        "tertiary-fixed": "#83fba5",
+                        "on-secondary-fixed": "#101b30",
+                        "on-surface": "#e3e2e8",
+                        "primary-fixed-dim": "#00daf3",
+                        "on-error": "#690005",
+                        "inverse-on-surface": "#2f3035",
+                        "on-tertiary-fixed-variant": "#005227",
+                        "error-container": "#93000a",
+                        "surface-variant": "#343439",
+                        "on-secondary-container": "#adb8d3",
+                        "inverse-primary": "#006875",
+                        "background": "#121317",
+                        "tertiary-fixed-dim": "#66dd8b",
+                        "on-tertiary-fixed": "#00210c",
+                        "primary-container": "#001e22",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-fixed": "#001f24",
+                        "secondary-fixed-dim": "#bbc6e2",
+                        "surface-container-highest": "#343439",
+                        "primary-fixed": "#9cf0ff",
+                        "secondary-fixed": "#d7e2ff",
+                        "surface-tint": "#00daf3",
+                        "surface-container": "#1f1f24",
+                        "on-tertiary": "#003919",
+                        "error": "#ffb4ab",
+                        "on-background": "#e3e2e8",
+                        "surface-bright": "#38393e",
+                        "surface": "#121317",
+                        "tertiary-container": "#00200b"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .insight-ribbon {
+            border-left: 2px solid #66dd8b;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-primary/30">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-[#121317]/80 backdrop-blur-xl shadow-[0_48px_48px_rgba(0,218,243,0.04)]">
+        <div class="text-2xl font-black tracking-tighter text-[#e3e2e8]">MakerToo/Io-Natural</div>
+        <div class="hidden md:flex space-x-8">
+            <a class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
+                href="first.html">Pregled</a>
+            <a class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#00daf3] border-b-2 border-[#00daf3] pb-1"
+                href="second.html">Tehnologija</a>
+            <a class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
+                href="third.html">Trženje</a>
+            <a class="font-['Manrope'] text-sm tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
+                href="forth.html">Vrednost</a>
+        </div>
+        <div class="flex items-center gap-2 px-5 py-2 border border-tertiary/40 rounded-lg">
+            <span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
+            <span class="text-tertiary font-bold text-xs uppercase tracking-widest">Sistem deluje</span>
+        </div>
+    </nav>
+    <!-- SideNavBar -->
+    <aside
+        class="fixed left-0 top-24 bottom-0 flex flex-col items-center py-8 bg-[#121317] h-full w-20 hover:w-64 transition-all duration-500 z-40 bg-gradient-to-r from-[#1a1b20] to-transparent group">
+        <div class="flex flex-col items-center space-y-8 w-full">
+            <div class="flex items-center px-6 w-full space-x-4">
+                <div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden flex-shrink-0">
+                    <img class="w-full h-full object-cover" data-alt="Executive Lead Profile"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0aKkVojVS5yMpBMcTi3asgQNJIrsYK7rLvUWITbn-cgE6VApdq-gMOfEnoLYcqrFsYEhORFy9SlELBWULewbC-xoZa88LUGm40MknlhFpPMVPDGI2mGHWgTcm4hIghGuHBIBDN6laCEu-AugR1HqkJZZVsITPPmnw_mKYW2W1Ee05fuyUyil1o3W6Y9OJDIBElEZcnDjq_7ZaobFFhEjanAfD5Joeb7D1f3uRvQlUojCHO1FBTcfG6OH6vOKtXr8AZ5mRfULTwBJ5" />
+                </div>
+                <div
+                    class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 overflow-hidden whitespace-nowrap">
+                    <p class="text-[#00daf3] font-bold text-sm">Projekt Alfa</p>
+                    <p class="text-on-surface-variant text-[10px]">Strateško poročilo</p>
+                </div>
+            </div>
+            <nav class="flex flex-col w-full space-y-2">
+                <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300"
+                    href="first.html">
+                    <span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+                    <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Povzetek</span>
+                </a>
+                <a class="flex items-center px-6 py-3 space-x-4 bg-[#00daf3]/10 text-[#00daf3] rounded-r-full transition-all duration-300"
+                    href="second.html">
+                    <span class="material-symbols-outlined" data-icon="dns">dns</span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Infrastruktura</span>
+                </a>
+                <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300"
+                    href="third.html">
+                    <span class="material-symbols-outlined" data-icon="hub">hub</span>
+                    <span
+                        class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Avtomatizacija</span>
+                </a>
+                <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300"
+                    href="forth.html">
+                    <span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+                    <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">SEO</span>
+                </a>
+                <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300"
+                    href="forth.html">
+                    <span class="material-symbols-outlined" data-icon="payments">payments</span>
+                    <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Vrednost</span>
+                </a>
+            </nav>
+            <div class="mt-auto px-4 w-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div class="w-full py-2 bg-tertiary/10 text-tertiary border border-tertiary/20 rounded-lg text-xs font-bold text-center">
+                    Infrastruktura aktivna
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- Main Content -->
+    <main class="ml-20 pt-32 px-12 pb-24 max-w-7xl mx-auto">
+        <!-- Header Section -->
+        <header class="mb-20">
+            <h1 class="font-headline text-6xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-6">
+                Motor za <br />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">rastjo.</span>
+            </h1>
+            <div class="insight-ribbon pl-6 py-2">
+                <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed">
+                    Tehnična razčlenitev infrastrukture io-natural.com. Odpravili smo ozka grla in implementirali visoko
+                    zmogljivo izolacijo za zagotavljanje 99,9% dostopnosti in TTFB pod 200 ms.
+                </p>
+            </div>
+        </header>
+        <!-- Bento Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <!-- VPS & Docker Isolation Card -->
+            <section
+                class="md:col-span-8 bg-surface-container-low rounded-xl p-8 transition-all hover:bg-surface-container-high">
+                <div class="flex justify-between items-start mb-12">
+                    <div>
+                        <h3 class="font-headline text-primary text-sm font-bold uppercase tracking-widest mb-2">
+                            Izolacija virov</h3>
+                        <h2 class="text-3xl font-bold">VPS in Docker Arhitektura</h2>
+                    </div>
+                    <span class="material-symbols-outlined text-primary text-4xl" data-icon="memory">memory</span>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <p class="text-on-surface-variant text-sm">Namenski virtualni zasebni strežniki zagotavljajo
+                            fizično moč, medtem ko Docker vsebniki skrbijo za izolacijo posameznih strani in varnost.
+                            Brez kontaminacije virov.</p>
+                        <div class="space-y-4">
+                            <div class="flex justify-between text-xs font-bold uppercase tracking-tighter">
+                                <span>Učinkovitost procesorja</span>
+                                <span class="text-tertiary">98% Učinkovitost</span>
+                            </div>
+                            <div class="h-1 bg-surface-container-highest rounded-full overflow-hidden">
+                                <div class="h-full bg-tertiary w-[98%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-lowest p-6 rounded-lg border border-outline-variant/10">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <span class="material-symbols-outlined text-tertiary"
+                                data-icon="check_circle">check_circle</span>
+                            <span class="text-sm font-bold">Utrjen varnostni sloj</span>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <span class="material-symbols-outlined text-tertiary"
+                                data-icon="check_circle">check_circle</span>
+                            <span class="text-sm font-bold">Pragovi samodejnega skaliranja</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Object Cache Pro Scorecard -->
+            <section
+                class="md:col-span-4 bg-surface-container-low rounded-xl p-8 border border-primary/10 relative overflow-hidden flex flex-col justify-between">
+                <div class="relative z-10">
+                    <span class="material-symbols-outlined text-primary mb-4" data-icon="speed">speed</span>
+                    <h3 class="font-headline text-on-surface text-xl font-bold mb-2">Object Cache Pro (Redis)</h3>
+                    <p class="text-on-surface-variant text-sm mb-6">Sistem za predpomnjenje v Redis za ultra hitre
+                        poizvedbe v podatkovni bazi.</p>
+                </div>
+                <div class="relative z-10 space-y-2">
+                    <p class="text-xs text-on-surface-variant uppercase font-bold tracking-widest">Enterprise
+                        Investicija</p>
+                    <div class="flex items-baseline space-x-2">
+                        <span class="text-4xl font-black text-tertiary">875 €</span>
+                        <span class="text-on-surface-variant text-sm">/ leto</span>
+                    </div>
+                </div>
+                <!-- Abstract decorative gradient -->
+                <div class="absolute -right-12 -bottom-12 w-48 h-48 bg-primary/10 blur-3xl rounded-full"></div>
+            </section>
+            <!-- WP-Cron & External Scheduling -->
+            <section
+                class="md:col-span-4 bg-surface-container-low rounded-xl p-8 hover:bg-surface-container-high transition-colors">
+                <span class="material-symbols-outlined text-on-surface-variant mb-6"
+                    data-icon="schedule">schedule</span>
+                <h3 class="font-headline text-on-surface text-xl font-bold mb-4">Zunanji prožilnik (Cron)</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                    Obhod standardnega WP-Cron mehanizma za visoko zanesljivost sistemskih opravil. Naša zunanja
+                    storitev proži opravila vsakih 60 sekund s 100% garancijo izvedbe.
+                </p>
+                <div class="flex items-center text-tertiary text-xs font-bold">
+                    <span class="material-symbols-outlined text-sm mr-2" data-icon="verified">verified</span>
+                    <span>Brez zamujenih opravil</span>
+                </div>
+            </section>
+            <!-- Scalability & Backups -->
+            <section class="md:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col md:flex-row gap-8">
+                <div class="flex-1">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <span class="material-symbols-outlined text-primary"
+                            data-icon="cloud_upload">cloud_upload</span>
+                        <h3 class="font-headline text-on-surface text-xl font-bold">Varnostno kopiranje in obnova</h3>
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3">
+                            <span class="w-1.5 h-1.5 bg-tertiary rounded-full mt-1.5"></span>
+                            <span class="text-sm text-on-surface-variant">Šifrirana zunanja shramba v 3 globalnih
+                                regijah.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-1.5 h-1.5 bg-tertiary rounded-full mt-1.5"></span>
+                            <span class="text-sm text-on-surface-variant">Dnevni posnetki baze podatkov in datotečnega
+                                sistema.</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="w-1.5 h-1.5 bg-tertiary rounded-full mt-1.5"></span>
+                            <span class="text-sm text-on-surface-variant">Možnost restavriranja z enim klikom in RTO
+                                &lt; 15 min.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="md:w-1/3 bg-surface-container-lowest rounded-lg p-6 flex flex-col justify-center border border-outline-variant/10">
+                    <p class="text-[10px] text-on-surface-variant uppercase font-bold tracking-[0.2em] mb-4">Poročilo o
+                        dosegljivosti</p>
+                    <div class="text-5xl font-extrabold tracking-tighter text-on-surface">99.9%</div>
+                    <div class="mt-4 flex gap-1">
+                        <div class="h-4 w-full bg-tertiary/20 rounded-sm"></div>
+                        <div class="h-4 w-full bg-tertiary/40 rounded-sm"></div>
+                        <div class="h-4 w-full bg-tertiary/60 rounded-sm"></div>
+                        <div class="h-4 w-full bg-tertiary rounded-sm"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Infrastructure Cost breakdown -->
+            <section class="md:col-span-12 mt-8 grid md:grid-cols-4 gap-6">
+                <div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-primary">
+                    <p class="text-xs text-on-surface-variant font-bold uppercase mb-2">Mesečni strošek VPS</p>
+                    <h4 class="text-2xl font-bold">€120.00</h4>
+                    <p class="text-[10px] text-on-surface-variant mt-1">Visoko zmogljivo optimizirano</p>
+                </div>
+                <div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-tertiary">
+                    <p class="text-xs text-on-surface-variant font-bold uppercase mb-2">Object Cache Pro licenca</p>
+                    <h4 class="text-2xl font-bold">€72.90</h4>
+                    <p class="text-[10px] text-on-surface-variant mt-1">Amortiziran mesečni strošek</p>
+                </div>
+                <div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-secondary">
+                    <p class="text-xs text-on-surface-variant font-bold uppercase mb-2">CDN in Edge omrežje</p>
+                    <h4 class="text-2xl font-bold">€45.00</h4>
+                    <p class="text-[10px] text-on-surface-variant mt-1">Globalna dostava vsebin</p>
+                </div>
+                <div class="bg-surface-container-low p-6 rounded-xl border-l-4 border-primary-container">
+                    <p class="text-xs text-on-surface-variant font-bold uppercase mb-2">Skupno upravljano</p>
+                    <h4 class="text-2xl font-bold text-primary">€237.90</h4>
+                    <p class="text-[10px] text-on-surface-variant mt-1">Osnovni tehnični strošek</p>
+                </div>
+            </section>
+        </div>
+        <!-- Strategic Insight Footer -->
+        <footer class="mt-24 border-t border-outline-variant/10 pt-12">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center space-x-6">
+                    <div class="text-tertiary flex flex-col">
+                        <span class="text-4xl font-bold">200ms</span>
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant">Čas
+                            nalaganja: TTFB</span>
+                    </div>
+                    <div class="w-px h-12 bg-outline-variant/20"></div>
+                    <div class="text-primary flex flex-col">
+                        <span class="text-4xl font-bold">99.9%</span>
+                        <span
+                            class="text-[10px] uppercase font-bold tracking-widest text-on-surface-variant">Uptime</span>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-on-surface-variant italic mb-2">"Infrastruktura ni le strošek; je temelj
+                        konverzij."</p>
+                    <p class="text-xs font-bold text-on-surface">— Tehnični odbor Stitch/IO</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
