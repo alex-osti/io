@@ -93,7 +93,7 @@
     <!-- TopNavBar -->
     <nav
         class="fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-8 py-4 md:py-6 bg-[#121317]/80 backdrop-blur-xl shadow-[0_48px_48px_rgba(0,218,243,0.04)]">
-        <div class="text-2xl font-black tracking-tighter text-[#e3e2e8]">MakerToo/Io-Natural</div>
+        <div class="text-base sm:text-xl md:text-2xl font-black tracking-tighter text-[#e3e2e8] max-w-[55%] sm:max-w-none truncate">MakerToo/Io-Natural</div>
         <button onclick="toggleMobileMenu()" class="md:hidden text-on-surface ml-auto mr-4 cursor-pointer hover:bg-surface-bright/20 rounded-lg p-2 transition-colors">
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
@@ -114,7 +114,7 @@
     </nav>
     <!-- SideNavBar -->
     <aside
-        class="fixed left-0 right-0 bottom-0 top-auto md:top-24 md:bottom-0 w-full md:w-20 md:hover:w-64 flex flex-row md:flex-col items-center justify-between md:justify-start px-4 md:px-0 py-2 md:py-8 bg-[#121317] border-t md:border-t-0 md:border-r border-outline-variant/10 z-50 group overflow-x-auto overflow-y-hidden md:overflow-x-hidden md:overflow-y-hidden bg-gradient-to-t md:bg-gradient-to-r from-[#1a1b20] to-transparent">
+        class="hidden md:flex md:flex-col fixed md:left-0 md:top-24 md:bottom-0 md:w-20 md:hover:w-64 items-start justify-start md:py-8 bg-[#121317] md:border-r border-outline-variant/10 z-40 group md:overflow-hidden transition-all duration-300 bg-gradient-to-r from-[#1a1b20] to-transparent">
         <div class="flex flex-col items-center space-y-8 w-full">
             <div class="flex items-center px-6 w-full space-x-4">
                 <div class="w-10 h-10 rounded-full bg-surface-container-highest overflow-hidden flex-shrink-0">
@@ -146,7 +146,7 @@
                         class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">Avtomatizacija</span>
                 </a>
                 <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300"
-                    href="seo.html"><span class="material-symbols-outlined" data-icon="trending_up"><span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+                    href="seo.html"><span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
                     <span class="opacity-0 group-hover:opacity-100 font-['Inter'] text-xs font-medium">SEO</span>
                 </a>
                 <a class="flex items-center px-6 py-3 space-x-4 text-[#c4c6cc] opacity-60 hover:opacity-100 hover:text-[#e3e2e8] transition-all duration-300"
@@ -163,7 +163,7 @@
         </div>
     </aside>
     <!-- Main Content -->
-    <main class="ml-0 md:ml-20 pt-24 md:pt-32 px-4 md:px-12 pb-24 md:pb-24 pb-28 max-w-7xl mx-auto">
+    <main class="ml-0 md:ml-20 pt-24 md:pt-32 px-4 md:px-12 pb-16 max-w-7xl mx-auto">
         <!-- Header Section -->
         <header class="mb-20">
             <h1 class="font-headline text-6xl md:text-7xl font-extrabold tracking-tighter text-on-surface mb-6">
@@ -342,42 +342,58 @@
         </footer>
     </main>
 
-<!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 bg-[#0d0e12]/98 backdrop-blur-3xl z-[100] transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col pt-6 px-6 md:hidden">
-    <div class="flex justify-between items-center w-full mb-8">
-        <div class="text-xl font-black text-primary font-headline">Strateški Meni</div>
-        <button onclick="toggleMobileMenu()" class="text-on-surface p-2 hover:bg-surface-bright/20 rounded-full transition-colors">
-            <span class="material-symbols-outlined text-3xl">close</span>
-        </button>
-    </div>
-    
-    <div class="flex flex-col items-start w-full border-t border-white/5 pt-6 text-on-surface">
-        
-            <a class="font-['Manrope'] text-2xl py-4 border-b border-outline-variant/10 w-full font-bold tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
-                href="index.html">Pregled</a>
-            <a class="font-['Manrope'] text-2xl py-4 border-b border-outline-variant/10 w-full font-bold tracking-wide uppercase font-bold text-[#00daf3] border-b-2 border-[#00daf3] text-primary"
-                href="second.html">Tehnologija</a>
-            <a class="font-['Manrope'] text-2xl py-4 border-b border-outline-variant/10 w-full font-bold tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
-                href="third.html">Trženje</a>
-            <a class="font-['Manrope'] text-2xl py-4 border-b border-outline-variant/10 w-full font-bold tracking-wide uppercase font-bold text-[#c4c6cc] hover:text-[#e3e2e8] transition-colors duration-300"
-                href="forth.html">Vrednost</a>
-        
-    </div>
-    
-    <div class="mt-auto pb-12 w-full flex justify-center">
-        <div class="flex items-center gap-2 px-6 py-4 bg-tertiary/10 border border-tertiary/20 rounded-xl shadow-[0_0_20px_rgba(102,221,139,0.1)]">
-            <span class="h-3 w-3 rounded-full bg-tertiary animate-pulse"></span>
-            <span class="text-tertiary font-bold text-sm uppercase tracking-widest">Sistem Deluje</span>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="fixed inset-0 z-[100] md:hidden" aria-hidden="true" style="pointer-events:none">
+    <div id="mm-backdrop" onclick="toggleMobileMenu()" class="absolute inset-0 bg-black/70 backdrop-blur-sm opacity-0 transition-opacity duration-300 ease-out cursor-pointer"></div>
+    <div id="mm-drawer" class="absolute right-0 top-0 h-full w-[280px] bg-[#0d0e12] border-l border-white/5 flex flex-col translate-x-full transition-transform duration-300 ease-out shadow-2xl">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-white/5">
+            <div>
+                <div class="text-primary font-bold text-[10px] uppercase tracking-widest mb-0.5">Navigacija</div>
+                <div class="text-on-surface font-black text-base" style="font-family:Manrope,sans-serif">MakerToo/Io-Natural</div>
+            </div>
+            <button onclick="toggleMobileMenu()" class="p-2 -mr-2 text-on-surface-variant hover:text-on-surface transition-colors rounded-lg hover:bg-white/5">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+        <nav class="flex-1 px-3 py-4 space-y-1 overflow-y-auto">
+            <a href="index.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
+                <span class="material-symbols-outlined text-xl shrink-0">analytics</span>
+                <span class="font-bold text-sm uppercase tracking-wide flex-1">Pregled</span>
+            </a>
+            <a href="second.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl bg-primary/10 text-primary transition-all duration-200">
+                <span class="material-symbols-outlined text-xl shrink-0">dns</span>
+                <span class="font-bold text-sm uppercase tracking-wide flex-1">Tehnologija</span>
+                <span class="material-symbols-outlined text-sm shrink-0">chevron_right</span>
+            </a>
+            <a href="third.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
+                <span class="material-symbols-outlined text-xl shrink-0">hub</span>
+                <span class="font-bold text-sm uppercase tracking-wide flex-1">Trženje</span>
+            </a>
+            <a href="seo.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
+                <span class="material-symbols-outlined text-xl shrink-0">trending_up</span>
+                <span class="font-bold text-sm uppercase tracking-wide flex-1">SEO</span>
+            </a>
+            <a href="forth.html" class="flex items-center gap-4 px-4 py-3.5 rounded-xl text-on-surface-variant hover:text-on-surface hover:bg-white/5 transition-all duration-200">
+                <span class="material-symbols-outlined text-xl shrink-0">payments</span>
+                <span class="font-bold text-sm uppercase tracking-wide flex-1">Vrednost</span>
+            </a>
+        </nav>
+        <div class="px-5 py-4 border-t border-white/5">
+            <div class="flex items-center gap-2.5 px-4 py-3 bg-tertiary/10 border border-tertiary/20 rounded-xl">
+                <span class="h-2 w-2 rounded-full bg-tertiary animate-pulse"></span>
+                <span class="text-tertiary font-bold text-xs uppercase tracking-widest">Sistem deluje</span>
+            </div>
         </div>
     </div>
 </div>
 
 <script>
-    function toggleMobileMenu() {
-        const menu = document.getElementById('mobile-menu');
-        menu.classList.toggle('translate-x-full');
-        document.body.classList.toggle('overflow-hidden'); // Prevent background scroll
-    }
+function toggleMobileMenu(){
+    var o=document.getElementById('mobile-menu'),b=document.getElementById('mm-backdrop'),d=document.getElementById('mm-drawer'),open=o.dataset.open==='1';
+    if(!open){o.style.pointerEvents='auto';o.setAttribute('aria-hidden','false');o.dataset.open='1';document.body.style.overflow='hidden';requestAnimationFrame(function(){b.style.opacity='1';d.style.transform='translateX(0)';});}
+    else{b.style.opacity='0';d.style.transform='translateX(100%)';document.body.style.overflow='';setTimeout(function(){o.style.pointerEvents='none';o.setAttribute('aria-hidden','true');o.dataset.open='0';},300);}
+}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&document.getElementById('mobile-menu').dataset.open==='1')toggleMobileMenu();});
 </script>
 </body>
 
